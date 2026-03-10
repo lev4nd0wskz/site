@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Turma Connect</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="sidebar">
+
+<h2>Turma 8C</h2>
+
+<div onclick="setChannel('geral')" class="channel"># geral</div>
+<div onclick="setChannel('memes')" class="channel"># memes</div>
+<div onclick="setChannel('tarefa')" class="channel"># tarefa</div>
+
+</div>
+
+<div id="chat">
+
+<div id="messages"></div>
+
+<div id="send">
+
+<input id="name" placeholder="seu nome">
+
+<input id="msg" placeholder="mensagem">
+
+<button onclick="send()">Enviar</button>
+
+</div>
+
+</div>
+
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+
+</html>
